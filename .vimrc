@@ -71,10 +71,6 @@ nnoremap <leader><leader> :action RecentFiles<CR>
 " switch between tabs
 nnoremap <leader><Tab> :action NextWindow<CR>
 
-" show file structure
-set list
-set listchars=eol:$
-
 set nowrap
 
 " auto read file
