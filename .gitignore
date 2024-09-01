@@ -1,6 +1,7 @@
 github-copilot
 configstore
 nvim
+iterm2
 
 **/__pycache__
 **/.DS_Store
