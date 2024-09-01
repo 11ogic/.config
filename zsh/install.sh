@@ -24,5 +24,6 @@ if [[ -f "$HOME/.zshrc" ]]; then
 fi
 
 cp .zshrc ~/.zshrc
+cp .p10k.zsh ~/.p10k.zsh
 
 chsh -s $(which zsh)
