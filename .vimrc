@@ -88,3 +88,10 @@ set sessionoptions+=globals,tabpages,winpos,winpos
 " edit
 xnoremap J :m '>+1<CR>gv=gv
 xnoremap K :m '<-2<CR>gv=gv
+
+inoremap <c-f> <right>
+inoremap <c-b> <left>
+
+" git
+map <leader>gs :!git status<CR>
+map <leader>gl :!git log<CR>
