@@ -1,11 +1,6 @@
-github-copilot
-configstore
-nvim
-iterm2
-htop
+*
 
-**/__pycache__
-**/.DS_Store
-**/.pyc
-
-neofetch
+!zsh
+!kitty
+!.tmux.conf
+!.vimrc
