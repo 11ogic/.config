@@ -21,7 +21,6 @@ source "$ZSHCONFIG/conf.d/oh-my-zsh.zsh"
 source "$ZSHCONFIG/conf.d/tools.zsh"
 source "$ZSHCONFIG/conf.d/aliases.zsh"
 source "$ZSHCONFIG/conf.d/functions.zsh"
-source "$ZSHCONFIG/conf.d/proxy.zsh"
 
 # Powerlevel10k 配置
 [[ ! -f "$ZSHCONFIG/conf.d/p10k.zsh" ]] || source "$ZSHCONFIG/conf.d/p10k.zsh"

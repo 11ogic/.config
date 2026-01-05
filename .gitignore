@@ -1,6 +1,14 @@
 *
 
-!zsh
-!kitty
+!zsh/
+!zsh/**
+
+!yazi/
+!yazi/**
+
+!kitty/
+!kitty/**
+
 !.tmux.conf
 !.vimrc
+!.gitignore
