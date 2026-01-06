@@ -3,3 +3,41 @@ on   = "!"
 for  = "unix"
 run  = 'shell "$SHELL" --block'
 desc = "Open $SHELL here"
+
+# nvim
+[[mgr.prepend_keymap]]
+on   = "@"
+run  = 'shell "nvim ." --block'
+desc = "Open nvim in current directory"
+
+# lazygit
+[[mgr.prepend_keymap]]
+on   = "<c-g>"
+run  = 'shell "lazygit" --block'
+desc = "Open lazygit here"
+
+# spot
+[[mgr.append_keymap]]
+on   = "<s-i>"
+run  = "spot"
+
+# ================= NAVIGATION =====================
+[[mgr.append_keymap]]
+on   = "<c-o>"
+run  = "back"
+desc = "Go back to previous directory"
+
+[[mgr.prepend_keymap]]
+on   = "<Tab>" # use Tab instead of <c-i> , because some terminals don't support <c-i>
+run  = "forward"
+desc = "Go forward to next directory"
+
+# ================= CD =====================
+[[mgr.prepend_keymap]]
+on = [ "g", "r" ]
+run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"'
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "d" ]
+run  = "cd ~/Downloads"
+desc = "Cd to ~/Downloads"
