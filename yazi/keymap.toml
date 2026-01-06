@@ -7,7 +7,7 @@ desc = "Open $SHELL here"
 # nvim
 [[mgr.prepend_keymap]]
 on   = "@"
-run  = 'shell "nvim ." --block'
+run  = 'shell "nvim" --block'
 desc = "Open nvim in current directory"
 
 # lazygit

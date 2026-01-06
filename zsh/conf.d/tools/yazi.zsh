@@ -1,13 +1,13 @@
 yy() {
-  local yazi_tmp
-  yazi_tmp="$(mktemp -t yazi-cwd.XXXXXX)"
+  local tmp
+  tmp="$(mktemp -t yazi-cwd.XXXXXX)"
 
-  yazi --cwd-file="$yazi_tmp"
+  yazi --cwd-file="$tmp"
 
-  if [[ -f "$yazi_tmp" ]]; then
+  if [[ -f "$tmp" ]]; then
     local cwd
-    cwd="$(<"$yazi_tmp")"
-    rm -f "$yazi_tmp"
+    cwd="$(<"$tmp")"
+    rm -f "$tmp"
 
     if [[ -d "$cwd" ]]; then
       cd "$cwd"
