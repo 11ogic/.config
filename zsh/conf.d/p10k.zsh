@@ -33,6 +33,7 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
     os_icon                 # os identifier
+    proxy                   # proxy
     dir                     # current directory
     vcs                     # git status
     # =========================[ Line #2 ]=========================
@@ -1717,3 +1718,10 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 
 (( ${#p10k_config_opts} )) && setopt ${p10k_config_opts[@]}
 'builtin' 'unset' 'p10k_config_opts'
+
+# custom proxy
+function prompt_proxy() {
+  if [[ -n "$PROXY_ON" ]]; then
+    p10k segment -b '#ff4d4f' -t '[proxy]'
+  fi
+}
